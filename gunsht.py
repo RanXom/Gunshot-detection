@@ -11,7 +11,7 @@ from flask import Flask, request, jsonify, render_template
 with open('model.pkl', 'rb') as f:
     model = pickle.load(f)
 
-audiofiles = pd.read_csv(r'C:\Users\rivva\gunshot_detect\gunshot-detection\UrbanSound8K.csv')
+audiofiles = pd.read_csv(r'C:\Users\beide\OneDrive\Documents\National Hackathon\Gunshot-detection\UrbanSound8K.csv')
 
 classes = dict(zip(audiofiles['classID'], audiofiles['class']))
 
